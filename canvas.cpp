@@ -182,7 +182,7 @@ void Canvas::draw3DObject()
                                              if (ByteIndexCanvas >= canvas->byteCount())
                                                  ByteIndexCanvas = 0;
 
-                                             canvas->bits()[ByteIndexCanvas] = texture->bits()[ByteIndexTexture] * normalDot;          // blue  chyba ten normalDot to przycieniowanie
+                                             canvas->bits()[ByteIndexCanvas] = texture->bits()[ByteIndexTexture] * normalDot;          // blue  normalDot to przycieniowanie
                                              canvas->bits()[ByteIndexCanvas+1] = texture->bits()[ByteIndexTexture+1] * normalDot;      // green
                                              canvas->bits()[ByteIndexCanvas+2] = texture->bits()[ByteIndexTexture+2] * normalDot;      // red
 
